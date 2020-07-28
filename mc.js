@@ -8,7 +8,9 @@ client.on('ready', () => {
     let memberCount = myGuild.memberCount;
     let memberCountChannel = myGuild.channels.get('737792403146014911');
     memberCountChannel.setName('Members: ' + memberCount)
-    console.log('Member Count Has Loaded.');
+    .then(result => console.log(result))
+    .catch(error => console.log(error));
+
 });
 
 client.on('guildMemberAdd', member => {
@@ -16,6 +18,8 @@ client.on('guildMemberAdd', member => {
     let memberCount = myGuild.memberCount;
     let memberCountChannel = myGuild.channels.get('737792403146014911');
     memberCountChannel.setName('Members: ' + memberCount)
+    .then(result => console.log(result))
+    .catch(error => console.log(error));
 });
 
 client.on('guildMemberRemove', member => {
@@ -23,6 +27,8 @@ client.on('guildMemberRemove', member => {
     let memberCount = myGuild.memberCount;
     let memberCountChannel = myGuild.channels.get('737792403146014911');
     memberCountChannel.setName('Members: ' + memberCount)
+    .then(result => console.log(result))
+    .catch(error => console.log(error));
 });
 
 client.login(config.token)
