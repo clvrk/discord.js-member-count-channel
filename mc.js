@@ -1,7 +1,8 @@
 const discord = require('discord.js');
 const client = new discord.Client();
-const config = require('./config.json')
+const config = require('./config.json');
 
+client.login(config.token)
 
 client.on('ready', () => {
     let myGuild = client.guilds.get('725196941050380348');
@@ -30,4 +31,3 @@ client.on('guildMemberRemove', member => {
     .catch(error => console.log(error));
 });
 
-client.login(config.token)
