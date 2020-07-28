@@ -1,7 +1,7 @@
 const discord = require('discord.js');
 const client = new discord.Client();
 const config = require('./config.json')
-const { prefix } = config;
+
 
 client.on('ready', () => {
     let myGuild = client.guilds.get('725196941050380348');
