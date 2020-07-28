@@ -4,7 +4,7 @@ const config = require('./config.json')
 const { prefix } = config;
 
 client.on('ready', () => {
-    let myGuild = client.guilds.get('725196941050380348');
+    let myGuild = client.guild.get('725196941050380348');
     let memberCount = myGuild.memberCount;
     let memberCountChannel = myGuild.channels.get('737792403146014911');
     memberCountChannel.setName('Members: ' + memberCount)
@@ -12,14 +12,14 @@ client.on('ready', () => {
 });
 
 client.on('guildMemberAdd', member => {
-    let myGuild = client.guilds.get('725196941050380348');
+    let myGuild = client.guild.get('725196941050380348');
     let memberCount = myGuild.memberCount;
     let memberCountChannel = myGuild.channels.get('737792403146014911');
     memberCountChannel.setName('Members: ' + memberCount)
 });
 
 client.on('guildMemberRemove', member => {
-    let myGuild = client.guilds.get('725196941050380348');
+    let myGuild = client.guild.get('725196941050380348');
     let memberCount = myGuild.memberCount;
     let memberCountChannel = myGuild.channels.get('737792403146014911');
     memberCountChannel.setName('Members: ' + memberCount)

@@ -1,0 +1,24 @@
+{
+  "name": "membercount",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./mc.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clvrk/MemberCount.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clvrk/MemberCount/issues"
+  },
+  "homepage": "https://github.com/clvrk/MemberCount#readme",
+  "dependencies": {
+    "discord.js": "^12.2.0"
+  }
+}
