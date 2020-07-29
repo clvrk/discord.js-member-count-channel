@@ -13,7 +13,7 @@ client.on('ready', () => {
     .catch(error => console.log(error));
 });
 
-client.on('guildMemberAdd', member => {
+client.on('guildMemberJoin', member => {
     let myGuild = client.guilds.cache.get(''); // your server id goes here.
     let memberCount = myGuild.memberCount;
     let memberCountChannel = myGuild.channels.cache.get('737792403146014911'); // your channel id goes here.
